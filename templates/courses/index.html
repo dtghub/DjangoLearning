@@ -11,7 +11,9 @@
         {% if courses %}
         <ul>
             {% for course in courses %}
-            <h1>{{ Course.title }}</h1>
+            <h1>{{ course.title }}</h1>
+            <h2>{{ course.date }}</h2>
+            <h3> {{ course.description }}</h3>
             {% endfor %}
         </ul>
         {% else %}
