@@ -1,7 +1,7 @@
-import imp
 from django.shortcuts import render
 from django.http import HttpResponse
 
 def index(request):
-    return HttpResponse("Hello World")
+    context_dict = {'boldmessage': 'Here we have a test'}
+    return render(request, 'courses/index.html', context=context_dict)
 
