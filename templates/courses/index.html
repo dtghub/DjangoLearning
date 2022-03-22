@@ -6,10 +6,17 @@
     </head>
 
     <body>
-        <h1>Heading</h1>
         <div>
-            Placeholder Text!
-            <strong>{{ boldmessage }}</strong>
+        <h1>Heading</h1>
+        {% if courses %}
+        <ul>
+            {% for course in courses %}
+            <h1>{{ Course.title }}</h1>
+            {% endfor %}
+        </ul>
+        {% else %}
+        <strong>No Courses to display yet!</strong>
+        {% endif %}
         </div>
     </body>
 </html>
