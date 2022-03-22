@@ -12,8 +12,8 @@
         <ul>
             {% for course in courses %}
             <h1>{{ course.title }}</h1>
-            <h2>{{ course.date }}</h2>
-            <h3> {{ course.description }}</h3>
+            <h2>{{ course.starting_date }}</h2>
+            <h3> {{ course.course_description }}</h3>
             {% endfor %}
         </ul>
         {% else %}
